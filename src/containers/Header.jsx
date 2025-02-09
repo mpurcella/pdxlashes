@@ -49,12 +49,12 @@ const Header = () => {
             <nav className="flex items-center justify-between">
                 <div className="flex items-center">
                     <img
-                        className="mr-12 w-36"
+                        className="mr-12 w-40"
                         src={PageLogo}
                         alt=""
                         aria-hidden
                     />
-                    <h1 className="font-montserrat text-18 font-medium text-white uppercase">
+                    <h1 className="font-montserrat text-20 font-medium text-white uppercase">
                         PDX Lashes
                     </h1>
                 </div>
