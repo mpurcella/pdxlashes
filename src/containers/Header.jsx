@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import PageLogo from '../assets/icons/eyelash-light.svg';
+import PageLogo from '../assets/icons/side-profile-light.svg';
 import HamburgerButton from '../components/HamburgerButton';
 
 const useMediaQuery = (query) => {
@@ -49,7 +49,7 @@ const Header = () => {
             <nav className="flex items-center justify-between">
                 <div className="flex items-center">
                     <img
-                        className="mr-12 w-40"
+                        className="mr-12 w-32"
                         src={PageLogo}
                         alt=""
                         aria-hidden
