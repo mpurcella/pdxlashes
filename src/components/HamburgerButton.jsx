@@ -4,7 +4,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
     return (
         <button
             type="button"
-            className="flex h-24 w-28 cursor-pointer flex-col justify-around"
+            className="focus-visible:outline-light-grey flex h-20 w-24 cursor-pointer flex-col justify-around focus-visible:outline-2 focus-visible:outline-offset-4"
             onClick={handleIsNavOpen}
             aria-label={
                 isNavOpen ? 'Close navigation menu' : 'Open Navigation Menu'
@@ -16,7 +16,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
                 className={classNames(
                     'h-2 w-full bg-white duration-200 ease-linear',
                     {
-                        'translate-y-8 -rotate-45': isNavOpen,
+                        'translate-y-[.4rem] -rotate-45': isNavOpen,
                     }
                 )}
             ></span>
@@ -32,7 +32,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
                 className={classNames(
                     'h-2 w-full bg-white duration-200 ease-linear',
                     {
-                        '-translate-y-8 rotate-45': isNavOpen,
+                        '-translate-y-[.4rem] rotate-45': isNavOpen,
                     }
                 )}
             ></span>

@@ -2,32 +2,8 @@
 
 @font-face {
     font-family: 'montserrat';
-    font-weight: 500;
-    src: url(./assets/fonts/MontserratAlternates-Medium.woff2);
-}
-
-@font-face {
-    font-family: 'montserrat';
-    font-weight: 600;
-    src: url(./assets/fonts/MontserratAlternates-SemiBold.woff2);
-}
-
-@font-face {
-    font-family: 'montserrat';
-    font-weight: 700;
-    src: url(./assets/fonts/MontserratAlternates-Bold.woff2);
-}
-
-@font-face {
-    font-family: 'montserrat';
-    font-weight: 800;
-    src: url(./assets/fonts/MontserratAlternates-ExtraBold.woff2);
-}
-
-@font-face {
-    font-family: 'montserrat';
-    font-weight: 900;
-    src: url(./assets/fonts/MontserratAlternates-Black.woff2);
+    font-weight: 400;
+    src: url(./assets/fonts/MontserratAlternates-Regular.woff2);
 }
 
 @theme {
@@ -35,21 +11,19 @@
 
     --font-montserrat: 'montserrat', sans-serif;
 
+    --font-weight-regular: 400;
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-extrabold: 800;
-    --font-weight-black: 900;
 
     --text-20: 1.25rem;
 
     --color-black: #1f1f1f;
+    --color-light-grey: #d3d3d3;
     --color-white: #f4f3f2;
     --color-eggshell: #f0ead6;
 
     --spacing-2: 0.125rem;
-    --spacing-8: 0.5rem;
     --spacing-12: 0.75rem;
+    --spacing-20: 1.25rem;
     --spacing-24: 1.5rem;
     --spacing-28: 1.75rem;
     --spacing-32: 2rem;

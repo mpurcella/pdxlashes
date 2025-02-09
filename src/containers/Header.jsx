@@ -54,7 +54,7 @@ const Header = () => {
                         alt=""
                         aria-hidden
                     />
-                    <h1 className="font-montserrat text-20 font-medium text-white uppercase">
+                    <h1 className="font-montserrat text-20 font-regular text-white uppercase">
                         PDX Lashes
                     </h1>
                 </div>
