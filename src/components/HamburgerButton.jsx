@@ -14,7 +14,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
         >
             <span
                 className={classNames(
-                    'h-3 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-white duration-200 ease-linear',
                     {
                         'translate-y-8 -rotate-45': isNavOpen,
                     }
@@ -22,7 +22,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
             ></span>
             <span
                 className={classNames(
-                    'h-3 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-white duration-200 ease-linear',
                     {
                         'invisible opacity-0': isNavOpen,
                     }
@@ -30,7 +30,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
             ></span>
             <span
                 className={classNames(
-                    'h-3 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-white duration-200 ease-linear',
                     {
                         '-translate-y-8 rotate-45': isNavOpen,
                     }
