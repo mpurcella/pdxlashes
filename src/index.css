@@ -9,6 +9,9 @@
 @theme {
     --*: initial;
 
+    --breakpoint-md: 48rem;
+    --breakpoint-lg: 64rem;
+
     --font-montserrat: 'montserrat', sans-serif;
 
     --font-weight-regular: 400;
