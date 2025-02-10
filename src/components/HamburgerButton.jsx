@@ -4,7 +4,7 @@ const HamburgerButton = ({ isNavOpen, handleIsNavOpen }) => {
     return (
         <button
             type="button"
-            className="focus-visible:outline-light-grey md:none flex h-20 w-24 cursor-pointer flex-col justify-around focus-visible:outline-1 focus-visible:outline-offset-4 md:hidden"
+            className="focus-visible:outline-light-grey flex h-20 w-24 cursor-pointer flex-col justify-around focus-visible:outline-1 focus-visible:outline-offset-4 md:hidden"
             onClick={handleIsNavOpen}
             aria-label={
                 isNavOpen ? 'Close navigation menu' : 'Open Navigation Menu'
