@@ -20,13 +20,13 @@ const navigationLinks = [
 
 const NavigationList = ({ onClick }) => {
     return (
-        <ul className="flex flex-col items-center justify-center gap-40 md:flex-row">
+        <ul className="flex -translate-y-88 flex-col items-center justify-center gap-40 md:flex-row">
             {navigationLinks.map((navigationLink) => {
                 return (
                     <li key={navigationLink.id}>
                         <a
                             href={navigationLink.url}
-                            className="font-inter text-24 md:text-20 font-light uppercase focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:text-white"
+                            className="font-inter text-24 md:text-18 md:focus-visible:outline-light-grey font-light uppercase focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:text-white md:lowercase"
                             onClick={onClick}
                         >
                             {navigationLink.label}

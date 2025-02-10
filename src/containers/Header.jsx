@@ -46,7 +46,7 @@ const Header = () => {
     }, [isNavOpen]);
 
     return (
-        <header className="bg-black p-28">
+        <header className="bg-black p-28 md:px-60">
             <nav className="flex items-center justify-between">
                 <div className="flex items-center">
                     <img
