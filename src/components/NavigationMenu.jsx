@@ -1,7 +1,12 @@
 import classNames from 'classnames';
 import NavigationList from './NavigationList';
 
-const NavigationMenu = ({ isNavOpen, onClick }) => {
+const NavigationMenu = ({
+    isNavOpen,
+    onClick,
+    isScreenWide,
+    focusDisabled,
+}) => {
     return (
         <div
             className={classNames(
@@ -12,7 +17,11 @@ const NavigationMenu = ({ isNavOpen, onClick }) => {
                 }
             )}
         >
-            <NavigationList onClick={onClick} />
+            <NavigationList
+                onClick={onClick}
+                isScreenWide={isScreenWide}
+                focusDisabled={focusDisabled}
+            />
         </div>
     );
 };

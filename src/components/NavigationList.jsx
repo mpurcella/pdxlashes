@@ -18,7 +18,15 @@ const navigationLinks = [
     },
 ];
 
-const NavigationList = ({ onClick }) => {
+const NavigationList = ({ onClick, isScreenWide, focusDisabled }) => {
+    const tabIndex = () => {
+        if (!isScreenWide && !focusDisabled) {
+            return -1;
+        } else {
+            0;
+        }
+    };
+
     return (
         <ul className="flex -translate-y-66 flex-col items-center justify-center gap-40 md:translate-none md:flex-row">
             {navigationLinks.map((navigationLink) => {
@@ -28,6 +36,7 @@ const NavigationList = ({ onClick }) => {
                             href={navigationLink.url}
                             className="font-inter text-24 md:text-18 md:focus-visible:outline-light-grey font-light uppercase focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:text-white md:lowercase"
                             onClick={onClick}
+                            tabIndex={tabIndex()}
                         >
                             {navigationLink.label}
                         </a>
