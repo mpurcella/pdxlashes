@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import PageLogo from '../assets/icons/side-profile-light.svg';
 import HamburgerButton from '../components/HamburgerButton';
+import NavigationMenu from '../components/NavigationMenu';
 
 const useMediaQuery = (query) => {
     const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -26,9 +27,9 @@ const Header = () => {
         setIsNavOpen((prevIsNavOpen) => !prevIsNavOpen);
     };
 
-    // const closeNav = () => {
-    //     setIsNavOpen(false);
-    // }
+    const closeNav = () => {
+        setIsNavOpen(false);
+    };
 
     useEffect(() => {
         if (isScreenWide) {
@@ -62,6 +63,7 @@ const Header = () => {
                     isNavOpen={isNavOpen}
                     handleIsNavOpen={handleIsNavOpen}
                 />
+                <NavigationMenu isNavOpen={isNavOpen} onClick={closeNav} />
             </nav>
         </header>
     );
