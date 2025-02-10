@@ -20,7 +20,7 @@ const navigationLinks = [
 
 const NavigationList = ({ onClick }) => {
     return (
-        <ul className="flex -translate-y-88 flex-col items-center justify-center gap-40 md:flex-row">
+        <ul className="flex -translate-y-66 flex-col items-center justify-center gap-40 md:flex-row">
             {navigationLinks.map((navigationLink) => {
                 return (
                     <li key={navigationLink.id}>
