@@ -3,7 +3,7 @@ import WomanJpeg from '../assets/images/jpeg/woman.jpeg';
 
 const Hero = () => {
     return (
-        <section className="relative bg-black">
+        <>
             <div className="h-[calc(100vh-4.75rem)]">
                 <picture>
                     <source srcSet={WomanWebp} type="image/webp" />
@@ -21,7 +21,7 @@ const Hero = () => {
                     <span className="-mt-12 md:-mt-20 lg:-mt-28">Lashes</span>
                 </h1>
             </div>
-        </section>
+        </>
     );
 };
 
