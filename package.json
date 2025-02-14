@@ -13,6 +13,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@phosphor-icons/react": "^2.1.7",
         "@tailwindcss/vite": "^4.0.5",
         "classnames": "^2.5.1",
         "react": "^19.0.0",
