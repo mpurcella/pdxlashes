@@ -7,13 +7,13 @@ const SocialList = () => {
             id: uuidv4(),
             url: 'https://www.instagram.com/pdxlashes.llc/',
             label: 'PDX Lashes on Instagram',
-            icon: <InstagramLogo weight="light" />,
+            icon: <InstagramLogo weight="fill" />,
         },
         {
             id: uuidv4(),
             url: 'sms:+15038064404',
             label: 'Send a Text Message to PDX Lashes',
-            icon: <Chats weight="light" />,
+            icon: <Chats weight="fill" />,
         },
     ];
     return (
