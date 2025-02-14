@@ -26,7 +26,6 @@ const NavigationList = ({ onClick, isScreenWide, focusDisabled }) => {
             0;
         }
     };
-
     return (
         <ul className="flex -translate-y-66 flex-col items-center justify-center gap-40 md:translate-none md:flex-row">
             {navigationLinks.map((navigationLink) => {

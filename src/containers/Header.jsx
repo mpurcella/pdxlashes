@@ -1,19 +1,23 @@
 import { useState, useEffect } from 'react';
 import FocusLock from 'react-focus-lock';
-import PageLogo from '../assets/icons/side-profile-light.svg';
 import HamburgerButton from '../components/HamburgerButton';
 import NavigationMenu from '../components/NavigationMenu';
 
 const useMediaQuery = (query) => {
-    const [matches, setMatches] = useState(window.matchMedia(query).matches);
+    const [mql] = useState(() => window.matchMedia(query));
+    const [matches, setMatches] = useState(mql.matches);
 
     useEffect(() => {
-        const mediaQueryList = window.matchMedia(query);
-        const listener = (event) => setMatches(event.matches);
+        const screenResize = (e) => {
+            setMatches(e.matches);
+        };
 
-        mediaQueryList.addEventListener('change', listener);
-        return () => mediaQueryList.removeEventListener('change', listener);
-    }, [query]);
+        mql.addEventListener('change', screenResize);
+
+        return () => {
+            mql.removeEventListener('change', screenResize);
+        };
+    }, [mql]);
 
     return matches;
 };
@@ -53,19 +57,11 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-black p-28 md:px-60">
-            <nav className="flex items-center justify-between">
-                <div className="flex items-center">
-                    <img
-                        className="mr-12 w-32"
-                        src={PageLogo}
-                        alt=""
-                        aria-hidden
-                    />
-                    <h1 className="font-montserrat text-20 font-regular text-white uppercase">
-                        PDX Lashes
-                    </h1>
-                </div>
+        <header className="flex items-center justify-between bg-black p-28 md:px-60">
+            <h1 className="font-montserrat text-20 font-regular text-white uppercase">
+                PDX LASHES
+            </h1>
+            <nav>
                 <FocusLock disabled={!focusDisabled}>
                     <HamburgerButton
                         isNavOpen={isNavOpen}
