@@ -2,26 +2,8 @@
 
 @font-face {
     font-family: 'inter';
-    src: url(./assets/fonts/Inter-ExtraLight.woff2);
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'inter';
     src: url(./assets/fonts/Inter-Light.woff2);
     font-weight: 300;
-}
-
-@font-face {
-    font-family: 'inter';
-    src: url(./assets/fonts/Inter-Regular.woff2);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'inter';
-    src: url(./assets/fonts/Inter-Medium.woff2);
-    font-weight: 500;
 }
 
 @font-face {
@@ -49,6 +31,7 @@
     --text-18: 1.125rem;
     --text-20: 1.25rem;
     --text-24: 1.5rem;
+    --text-28: 1.75rem;
 
     --color-black: #1f1f1f;
     --color-light-grey: #d3d3d3;
