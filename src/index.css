@@ -12,6 +12,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url(./assets/fonts/MontserratAlternates-Black.woff2);
+    font-weight: 900;
+}
+
 @theme {
     --*: initial;
 
@@ -23,6 +29,7 @@
 
     --font-weight-light: 300;
     --font-weight-regular: 400;
+    --font-weight-black: 900;
 
     --text-10: 0.625rem;
     --font-16: 1rem;
@@ -31,6 +38,7 @@
     --text-24: 1.5rem;
     --text-28: 1.75rem;
     --text-32: 2rem;
+    --text-140: 8.75rem;
 
     --color-black: #1f1f1f;
     --color-light-grey: #d3d3d3;

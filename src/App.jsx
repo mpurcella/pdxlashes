@@ -1,11 +1,14 @@
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 import Header from './containers/Header';
 
 const App = () => {
     return (
         <div className="leading-none antialiased">
             <Header />
-            <div className="h-[600px] bg-white"></div>
+            <main>
+                <Hero />
+            </main>
             <Footer />
         </div>
     );
