@@ -5,7 +5,7 @@ const App = () => {
     return (
         <div className="leading-none antialiased">
             <Header />
-            <div className="bg-eggshell h-[600px]"></div>
+            <div className="h-[600px] bg-white"></div>
             <Footer />
         </div>
     );

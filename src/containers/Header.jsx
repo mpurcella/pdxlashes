@@ -57,9 +57,9 @@ const Header = () => {
     };
 
     return (
-        <header className="flex items-center justify-between bg-black p-28 md:px-60">
-            <h1 className="font-montserrat text-20 font-regular text-white uppercase">
-                PDX LASHES
+        <header className="flex justify-between bg-black p-28 md:px-60">
+            <h1 className="font-montserrat text-20 text-white uppercase">
+                PDX Lashes
             </h1>
             <nav>
                 <FocusLock disabled={!focusDisabled}>
