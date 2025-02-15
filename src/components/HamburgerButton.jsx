@@ -8,7 +8,7 @@ const HamburgerButton = ({
     return (
         <button
             type="button"
-            className="focus-visible:outline-light-grey flex h-20 w-24 cursor-pointer flex-col justify-around focus-visible:outline-1 focus-visible:outline-offset-4 md:hidden"
+            className="flex h-20 w-24 cursor-pointer flex-col justify-around focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:hidden"
             onClick={() => {
                 handleIsNavOpen();
                 handleFocusDisabled();
@@ -21,7 +21,7 @@ const HamburgerButton = ({
         >
             <span
                 className={classNames(
-                    'h-2 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-black duration-200 ease-linear',
                     {
                         'translate-y-[.4rem] -rotate-45': isNavOpen,
                     }
@@ -29,7 +29,7 @@ const HamburgerButton = ({
             ></span>
             <span
                 className={classNames(
-                    'h-2 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-black duration-200 ease-linear',
                     {
                         'invisible opacity-0': isNavOpen,
                     }
@@ -37,7 +37,7 @@ const HamburgerButton = ({
             ></span>
             <span
                 className={classNames(
-                    'h-2 w-full bg-white duration-200 ease-linear',
+                    'h-2 w-full bg-black duration-200 ease-linear',
                     {
                         '-translate-y-[.4rem] rotate-45': isNavOpen,
                     }

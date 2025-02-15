@@ -57,8 +57,8 @@ const Header = () => {
     };
 
     return (
-        <header className="flex justify-between bg-black p-28 md:px-60">
-            <h1 className="font-montserrat text-20 text-white uppercase">
+        <header className="relative flex justify-between bg-white p-28 shadow-lg md:px-60">
+            <h1 className="font-montserrat text-20 text-black uppercase">
                 PDX Lashes
             </h1>
             <nav>
