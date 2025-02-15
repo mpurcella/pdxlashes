@@ -33,7 +33,7 @@ const NavigationList = ({ onClick, isScreenWide, focusDisabled }) => {
                     <li key={navigationLink.id}>
                         <a
                             href={navigationLink.url}
-                            className="font-inter text-24 md:text-18 uppercase focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:lowercase"
+                            className="font-inter text-24 md:text-18 lg:link-hover lg:link-transition uppercase focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black md:lowercase lg:border-y-[.0625rem] lg:border-transparent lg:hover:border-b-black"
                             onClick={onClick}
                             tabIndex={tabIndex()}
                         >
