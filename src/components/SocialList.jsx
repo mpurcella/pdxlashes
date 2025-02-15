@@ -23,7 +23,7 @@ const SocialList = () => {
                     <li key={socialLink.id}>
                         <a
                             href={socialLink.url}
-                            className="text-32 md:text-28 focus-visible:outline-light-grey block text-white focus-visible:outline-1 focus-visible:outline-offset-4"
+                            className="text-32 md:text-28 block text-white focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-white"
                             target="_blank"
                             rel="noopener noreference"
                             aria-label={socialLink.label}
