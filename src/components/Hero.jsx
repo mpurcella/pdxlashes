@@ -15,7 +15,7 @@ const Hero = () => {
                     />
                 </picture>
             </div>
-            <div className="absolute top-[30%] left-0 px-28 md:top-[20%] md:px-52 lg:top-[15%]">
+            <div className="absolute top-[32%] left-0 px-28 md:top-[20%] md:px-52 lg:top-[15%]">
                 <h1 className="font-montserrat lg:text-140 md:text-100 text-60 flex flex-col font-black text-white uppercase">
                     <span>PDX</span>
                     <span className="-mt-12 md:-mt-20 lg:-mt-28">Lashes</span>
