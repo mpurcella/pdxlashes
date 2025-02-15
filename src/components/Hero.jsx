@@ -11,7 +11,7 @@ const Hero = () => {
                     <img
                         src={WomanJpeg}
                         alt=""
-                        className="h-full w-full object-cover opacity-20"
+                        className="h-full w-full object-cover opacity-15"
                     />
                 </picture>
             </div>
