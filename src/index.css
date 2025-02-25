@@ -68,6 +68,10 @@
     }
 }
 
-@utility link-transition {
+@utility navigation-link-transition {
     transition: 0.2s ease-in-out border-color;
+}
+
+@utility icon-link-transition {
+    transition: 0.2s ease-in-out color;
 }
